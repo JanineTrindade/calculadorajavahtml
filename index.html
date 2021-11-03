@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 03/11</title>
+
+    
+    
+</head>
+<body>
+    <h2>Pagina com java</h2>
+    Digite um numero <input id="entrada1"><br>
+    <button id="bt1" onclick="condicao()">OK</button>
+    <p id="demo">...</p>
+    <script>
+
+        function condicao(){
+
+            var num1=parseInt(document.getElementById('entrada1').value);
+            var text='';
+
+            if(num1>=10){
+                text="janine goodbye";
+            }
+            else{
+                text="janine hi";
+            }
+               document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+</body>
+</html>

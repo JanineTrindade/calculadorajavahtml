@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULO</title>
+
+    <style>
+
+        #bt1{
+            background-color: rgb(25, 0, 255);
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            color: white;
+        }
+
+        #bt2{
+            background-color: rgb(25, 0, 255);
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            color: white;
+        }
+
+        #bt3{
+            background-color: rgb(25, 0, 255);
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            color: white;
+        }
+
+        #bt4{
+            background-color: rgb(25, 0, 255);
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            color: white;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h2>Calculadora JavaScript</h2>
+
+    <center>Digite um numero <input id="entrada1"><br><p></center></p>
+    <center>Digite um numero <input id="entrada2"><br><p></center></p>
+
+    <center><button id="bt1" onclick="condicao()">+</button>
+    <button id="bt2" onclick="condicao1()">-</button>
+    <button id="bt3" onclick="condicao2()">*</button>
+    <button id="bt4" onclick="condicao3()">/</button></center>
+
+            <center><b><p id="demo">Resultado</p></b></center>
+
+    <script>
+
+        function condicao(){
+
+            var num1=parseInt(document.getElementById('entrada1').value);
+            var num2=parseInt(document.getElementById('entrada2').value);
+
+            var soma= num1 + num2;
+            document.getElementById("demo").innerHTML = soma;
+        }
+
+               function condicao1(){
+    
+                var num1=parseInt(document.getElementById('entrada1').value);
+                var num2=parseInt(document.getElementById('entrada2').value);
+
+            var sub= num1 - num2;
+            document.getElementById("demo").innerHTML = sub;
+
+         }
+
+            function condicao2(){
+
+                var num1=parseInt(document.getElementById('entrada1').value);
+                var num2=parseInt(document.getElementById('entrada2').value);
+
+            var mult= num1 * num2;
+            document.getElementById("demo").innerHTML = mult;
+               
+            
+        }
+
+        function condicao3(){
+
+            var num1=parseInt(document.getElementById('entrada1').value);
+             var num2=parseInt(document.getElementById('entrada2').value);
+
+            var divisao= num1 / num2;
+            document.getElementById("demo").innerHTML = divisao;
+    
+        }
+    </script>
+</body>
+</html>
